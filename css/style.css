@@ -1,0 +1,203 @@
+:root {
+  --first-logo-color: #4d5ae5;
+  --second-footer-text-color: #f4f4fd;
+  --primery-background-color: #ffffff;
+  --primery-text-color: #2e2f42;
+  --text-color: #434455;
+  --footer-text-color: #e7e9fc;
+  --hover-text-color: #404bbf;
+  --primery-button-text-color: #ffffff;
+  --primery-button-background-color: #4d5ae5;
+  --hover-button-background-color: #404bbf;
+  --team-background-color: #f4f4fd;
+  --team-card-background-color: #ffffff;
+  --footer-color: #2e2f42;
+}
+body {
+  color: var(--text-color);
+  background-color: var(--primery-background-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+/* index.html */
+.list {
+  list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/*header*/
+.top-logo {
+  color: var(--primery-text-color);
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.blue-logo {
+  color: var(--first-logo-color);
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.link {
+  color: var(--primery-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--hover-text-color);
+}
+.contacts {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  font-style: normal;
+}
+.contacts:hover,
+.contacts:focus {
+  color: var(--hover-text-color);
+}
+/* preview */
+.preview {
+  background-color: #2e2f42;
+}
+.preview-header {
+  color: var(--primery-background-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+}
+.peview-button {
+  color: var(--primery-button-text-color);
+  background-color: var(--primery-button-background-color);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.peview-button:hover,
+.peview-button:focus {
+  color: var(--primery-button-text-color);
+  background-color: var(--hover-button-background-color);
+  cursor: pointer;
+}
+/* advantages */
+
+.advantages-header {
+  color: var(--primery-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.advantages-text {
+  color: var(--text-color);
+}
+/* works */
+
+.works-header {
+  color: var(--primery-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+}
+/* Team */
+.team {
+  background-color: var(--team-background-color);
+}
+.team-card {
+  background-color: var(--team-card-background-color);
+}
+.team-header {
+  color: var(--primery-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+}
+
+.team-name {
+  color: var(--primery-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.09;
+}
+
+.team-specialization {
+  color: var(--text-color);
+}
+/* footer */
+.bottom-line {
+  background-color: var(--footer-color);
+}
+.bottom-line-logo {
+  color: var(--second-footer-text-color);
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+}
+.blue-logo {
+  color: var(--first-logo-color);
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+}
+.bottom-line-text {
+  color: var(--footer-text-color);
+}
+/* portfolio */
+.filter-button {
+  color: var(--first-logo-color);
+  background-color: var(--second-footer-text-color);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--primery-button-text-color);
+  background-color: var(--hover-button-background-color);
+  cursor: pointer;
+}
+.examples-link {
+  text-decoration: none;
+}
+.examples-header {
+  color: var(--primery-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.examples-text {
+  color: var(--primery-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
