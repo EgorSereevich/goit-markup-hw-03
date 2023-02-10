@@ -289,7 +289,7 @@ img {
 /* footer */
 .bottom-line {
   background-color: var(--footer-color);
-  padding: 100px 1020px 100px 156px;
+  padding: 100px 0;
 }
 
 .bottom-line-logo {
