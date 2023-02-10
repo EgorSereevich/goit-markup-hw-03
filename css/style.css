@@ -20,6 +20,24 @@ body {
   font-size: 16px;
 }
 
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* index.html */
 .list {
   list-style: none;
@@ -66,6 +84,7 @@ body {
   font-size: 18px;
   line-height: 1.33;
   margin-right: 76px;
+  padding: 24px 0;
 }
 .blue-logo {
   color: var(--first-logo-color);
@@ -80,21 +99,23 @@ body {
   padding-left: 0;
 }
 .list-link {
-  padding: 24px 0;
-}
-.list-link + .list-link {
-  margin-left: 40px;
-}
-.link {
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--primery-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.nav-link + .nav-link {
+  margin-left: 40px;
+}
+.link {
   text-decoration: none;
 }
 
-.link:hover,
-.link:focus {
+.list-link:hover,
+.list-link:focus {
   color: var(--hover-text-color);
 }
 .contacts-list {
@@ -107,6 +128,8 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   font-style: normal;
+  padding: 24px 0;
+  letter-spacing: 0.02em;
 }
 .comtacts-link + .comtacts-link {
   margin-left: 40px;
@@ -121,13 +144,17 @@ body {
   background-color: #2e2f42;
   text-align: center;
 }
+.preview-container {
+  padding: 188px 0;
+}
 .preview-header {
   color: var(--primery-background-color);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  margin: 0;
-  padding-top: 188px;
+  margin-bottom: 48px;
+  letter-spacing: 0.02em;
+
   max-width: 494px;
   margin-left: auto;
   margin-right: auto;
@@ -145,7 +172,6 @@ body {
   height: 56px;
   border-radius: 4px;
   border: 1px solid var(--primery-button-background-color);
-  margin: 48px 0 188px 0;
 }
 .peview-button:hover,
 .peview-button:focus {
@@ -158,12 +184,9 @@ body {
   display: flex;
   justify-content: space-between;
   width: 1128px;
-  margin: 0;
-  padding: 0;
 }
-.advantages-list {
-  margin: 120px 0;
-  width: 264px;
+.advanteges-container {
+  padding: 120px 0;
 }
 
 .advantages-header {
@@ -171,23 +194,34 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
 }
 .advantages-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--text-color);
 }
+.advantages-list + .advantages-list {
+  margin-left: 24px;
+}
+
 /* works */
+.works-container {
+  padding-bottom: 120px;
+}
 .works-flex-container {
   display: flex;
-  margin: 0 0 120px 0;
-  padding: 0;
 }
 .works-header {
   color: var(--primery-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  margin: 0 0 72px 0;
+  margin-bottom: 72px;
   text-align: center;
+  letter-spacing: 0.02em;
 }
 .list-works + .list-works {
   margin-left: 24px;
@@ -198,28 +232,36 @@ body {
   justify-content: space-between;
   width: 1128px;
 }
+.team-container {
+  padding: 120px 0;
+}
 .team {
   background-color: var(--team-background-color);
 }
 .team-card {
   background-color: var(--team-card-background-color);
   text-align: center;
-  margin-bottom: 120px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-header {
   color: var(--primery-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  padding: 120px 0 72px 0;
+  letter-spacing: 0.02em;
+  margin-bottom: 72px;
+
   text-align: center;
 }
 .team .list {
-  padding: 0;
-  margin: 0;
 }
 .team-card + .team-card {
   margin-left: 24px;
+}
+.card-text {
+  padding: 32px 16px;
 }
 
 .team-name {
@@ -227,16 +269,29 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.09;
-  margin: 32px 0 0 0;
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+}
+.specialization {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color);
 }
 
 .team-specialization {
   color: var(--text-color);
-  margin: 8px 0 32px 0;
 }
 /* footer */
 .bottom-line {
   background-color: var(--footer-color);
+}
+.bottom-line-container {
+  padding: 100px 0;
 }
 .bottom-line-logo {
   display: inline-block;
@@ -248,7 +303,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
-  margin: 100px 0 0 0;
+  margin-bottom: 16px;
 }
 
 .blue-logo {
@@ -262,9 +317,11 @@ body {
 }
 .bottom-line-text {
   color: var(--footer-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 
-  padding: 16px 0 100px 0;
-  width: 264px;
+  max-width: 264px;
 }
 /* portfolio */
 .filter-button {
@@ -275,6 +332,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+
+  letter-spacing: 0.04em;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   width: 116px;
@@ -297,31 +356,27 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  margin-top: 32px;
-  margin-left: 16px;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .examples-text {
   color: var(--primery-text-color);
   font-size: 16px;
   line-height: 1.5;
-  margin: 8px 0 32px 16px;
+  letter-spacing: 0.02em;
 }
 .filter-list {
   display: flex;
-  margin-top: 96px;
   justify-content: center;
-  margin-bottom: 72px;
-  padding: 0;
+  padding: 96px 0 72px 0;
 }
 .examples-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
   margin-left: -24px;
   margin-top: -48px;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 .examples-card {
   margin: 0;
@@ -330,5 +385,10 @@ body {
   margin-left: 23px;
   margin-top: 48px;
   max-width: 360px;
-  border: 1px solid #e7e9fc;
+}
+.examples-card-text {
+  padding: 32px 16px 32px 16px;
+  border-right: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
 }
