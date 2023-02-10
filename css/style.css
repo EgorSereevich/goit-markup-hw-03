@@ -151,11 +151,12 @@ img {
   color: var(--primery-background-color);
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.07;
+  line-height: 1.071;
   margin-bottom: 48px;
   letter-spacing: 0.02em;
 
-  max-width: 494px;
+  max-width: 498px;
+
   margin-left: auto;
   margin-right: auto;
 }
