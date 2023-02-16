@@ -211,7 +211,7 @@ img {
 }
 
 /* works */
-.work {
+.works {
   padding-bottom: 120px;
 }
 
@@ -237,7 +237,7 @@ img {
 
 .team {
   background-color: var(--team-background-color);
-  padding: 120px 0;
+  padding-bottom: 120px;
 }
 .team-card {
   background-color: var(--team-card-background-color);
@@ -338,8 +338,7 @@ img {
   letter-spacing: 0.04em;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  width: 116px;
-  height: 48px;
+  padding: 12px 24px;
 }
 .list-button + .list-button {
   margin-left: 24px;
